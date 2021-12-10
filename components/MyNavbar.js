@@ -8,7 +8,7 @@ import { useContext } from 'react';
 function MyNavbar() {
 
   return <div>
-    <nav class="navbar fixed-top navbar-expand-lg shadow shadow-sm navbar-light bg-light "
+    <nav class="navbar navbar-expand-lg shadow shadow-sm navbar-light bg-light "
       style={{ borderTop: "3px solid rgb(255, 137, 78)" }}>
       <div class="container ">
         <a class="navbar-brand" href="/">FountainFarms</a>

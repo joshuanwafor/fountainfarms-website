@@ -9,24 +9,24 @@ export default function Index({ departments }) {
       {/* <OverlayWelcom /> */}
       <MyNavbar></MyNavbar>
 
+      <div id="cover">
+        <div className='container'>
 
-      <div className='container'>
+          <div className='row align-items-center' style={{ minHeight: '70vh' }}>
+            <div className='col-12 col-md-6'>
+              <h1 className='fw-bold text-light'>
+                Sponsor a farm, earn returns <br />and empower farmers while at it.
+              </h1>
 
-        <div className='row align-items-center' style={{ minHeight: '70vh' }}>
-          <div className='col-12 col-md-6'>
-            <h1 className='fw-bold'>
-              Sponsor a farm, earn returns <br />and empower farmers while at it.
-            </h1>
+              <p className='lead  text-light'>
+                Earn high returns when you sponsor farms, farms sponsored help farmers scale up production, empower the communities, preserve the future while you also grow your money.
+              </p>
 
-            <p className='lead'>
-              Earn high returns when you sponsor farms, farms sponsored help farmers scale up production, empower the communities, preserve the future while you also grow your money.
-            </p>
-
-            <button className='btn btn-lg btn-primary'>Get Started</button>
+              <button className='btn btn-lg btn-primary'>Get Started</button>
+            </div>
           </div>
         </div>
       </div>
-
 
       <Footer />
     </>

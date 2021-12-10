@@ -2,7 +2,7 @@
 #cover {
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
     background-position: left;
-    background: url('https://firebasestorage.googleapis.com/v0/b/renosnuggets-01.appspot.com/o/serious-african-american-student-working-research.jpg?alt=media&token=67a6dbf1-1671-4533-a7f6-87b0bdd64e8c');
+    background: url('/male-farmer-who-is-using-shovel-dig-soil-his-rice-fields.jpg');
     background-size: cover;
 }
 
@@ -17,7 +17,7 @@
 
 
 body{
-    padding-top:  3.5rem;
+  
 }
 
 *{
