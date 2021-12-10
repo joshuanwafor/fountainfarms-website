@@ -30,20 +30,6 @@ export default function Index({ departments }) {
         </div>
       </div>
 
-      <div className="container my-5">
-        <h3>Search project by departments</h3>
-        <div className="row">
-          {departments.sort((a, b) => a.name.localeCompare(b.name)).map(v => {
-            return <div className="col-12 col-md-4 my-2">
-              <Link href={"/projects?department_id=" + v.id}>
-                <a className="text-decoration-none text-body">
-                  <TaxonomyCard {...v} />
-                </a>
-              </Link>
-            </div>
-          })}
-        </div>
-      </div>
       <Footer />
     </>
   );
