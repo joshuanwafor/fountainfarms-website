@@ -1,57 +1,44 @@
 import MyNavbar from '../components/MyNavbar';
 import Footer from "../components/footer"
-import Link from "next/link"
-import TaxonomyCard from "../components/taxonomy-card"
 import "../style.css"
 import { getDepartments } from "../lib/actions"
 import { SearchComponent } from '../components/search-component';
 export default function Index({ departments }) {
   return (
     <>
-      <OverlayWelcom />
+      {/* <OverlayWelcom /> */}
       <MyNavbar></MyNavbar>
-      <div id="cover">
-        <div className="container-fluid py-5 px-md-5">
-          <div className="row align-items-center justify-content-center text-center" style={{ minHeight: "60vh" }}>
-            <div className="col-md-6">
-              <h1 className="fw-bold text-light">Project resources for everyone.</h1>
-              <p className="md-lead text-light">Find project resources for your project work</p>
 
-              <SearchComponent />
 
-            </div>
+      <div className='container'>
+
+        <div className='row align-items-center' style={{ minHeight: '70vh' }}>
+          <div className='col-12 col-md-6'>
+            <h1 className='fw-bold'>
+              Sponsor a farm, earn returns <br />and empower farmers while at it.
+            </h1>
+
+            <p className='lead'>
+              Earn high returns when you sponsor farms, farms sponsored help farmers scale up production, empower the communities, preserve the future while you also grow your money.
+            </p>
+
+            <button className='btn btn-lg btn-primary'>Get Started</button>
           </div>
         </div>
       </div>
-      <div className="bg-dark">
-        <div className="d-flex flex-column flex-md-row p-4 justify-content-center align-items-center">
-          <div className="text-light  text-center lead mx-md-3">Over <span className="fw-bold">200</span> resources publised. Create publisher account.</div>
-          <a className="btn btn-danger mt-2 mt-md-0 btn-lg" href="https://app.mypapers.shop/profile">Create Account</a>
-        </div>
-      </div>
+
 
       <Footer />
     </>
   );
 }
 
-export async function getStaticProps() {
-
-  const data = await getDepartments();
-
-  return {
-    props: {
-      departments: data
-    }
-  }
-}
-
 
 export function OverlayWelcom() {
-  return <div style={{ position: "fixed", width: "100%", zIndex: 100000000000000000,background:"rgba(200,200,200,.9)" }}>
+  return <div style={{ position: "fixed", width: "100%", zIndex: 100000000000000000, background: "rgba(200,200,200,.9)" }}>
 
-    <div className="container p-2" style={{height:"100vh"}}>
-      <div className="row justify-content-center align-items-center " style={{ }}>
+    <div className="container p-2" style={{ height: "100vh" }}>
+      <div className="row justify-content-center align-items-center " style={{}}>
         <div style={{ borderRadius: 10, overflow: "hidden" }} className="cool-10 col-md-6 p-0 text-center bg-light shadow">
           <div className="mb-2" style={{ paddingTop: '40%' }} id="welcomecover">
 
@@ -63,9 +50,9 @@ export function OverlayWelcom() {
             <p className="lead">Create and Settup an account to published project[s] you'd love to exchange for some cash...</p>
             <a className="btn btn-lg btn-danger" href="https://app.mypapers.shop/profile">Create Publisher Account</a>
 
-           <p>
-           <small className="my-2 muted">Resources would be open for sale starting from  <b>Jan.01.2022</b></small>
-           </p>
+            <p>
+              <small className="my-2 muted">Resources would be open for sale starting from  <b>Jan.01.2022</b></small>
+            </p>
           </div>
         </div>
       </div>
