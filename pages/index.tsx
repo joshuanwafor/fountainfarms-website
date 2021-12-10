@@ -12,7 +12,7 @@ export default function Index({ departments }) {
       <div id="cover">
         <div className='container'>
 
-          <div className='row align-items-center' style={{ minHeight: '70vh' }}>
+          <div className='row align-items-center' style={{ minHeight: '90vh' }}>
             <div className='col-12 col-md-6'>
               <h1 className='fw-bold text-light'>
                 Sponsor a farm, earn returns <br />and empower farmers while at it.
